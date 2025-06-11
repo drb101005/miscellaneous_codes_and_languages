@@ -1,0 +1,13 @@
+1. Number base converter (binary, decimal, hex)
+2.Dice roller simulator
+3.Coin flip simulator
+4.Password genrator
+5.X and O game
+6.Word counter
+7.Character frequency counter
+8.Days until a certain date(using date and time)
+9.Birthday reminder
+10.Age calculator
+11.Spelling checker (using pyspellchecker)
+12.Simple chatbot (rule-based)
+13.Typing speed tester
