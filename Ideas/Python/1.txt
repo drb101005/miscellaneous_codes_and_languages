@@ -11,3 +11,4 @@
 11.Spelling checker (using pyspellchecker)
 12.Simple chatbot (rule-based)
 13.Typing speed tester
+14.The Map idea
