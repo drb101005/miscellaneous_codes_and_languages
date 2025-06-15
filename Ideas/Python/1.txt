@@ -12,3 +12,4 @@
 12.Simple chatbot (rule-based)
 13.Typing speed tester
 14.The Map idea
+15.A Trivia Game
