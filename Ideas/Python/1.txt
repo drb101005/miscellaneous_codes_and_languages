@@ -1,4 +1,4 @@
-1. Number base converter (binary, decimal, hex)
+1.Number base converter (binary, decimal, hex)
 2.Dice roller simulator
 3.Coin flip simulator
 4.Password genrator
@@ -8,8 +8,21 @@
 8.Days until a certain date(using date and time)
 9.Birthday reminder
 10.Age calculator
+      -using date and time package
 11.Spelling checker (using pyspellchecker)
 12.Simple chatbot (rule-based)
 13.Typing speed tester
 14.The Map idea
 15.A Trivia Game
+     -keeps track of score 
+     -10 simple coding questions 
+     -any 5 questions will be asked 
+     -can also add diffusion levels 
+16.A graph plotter
+17.Making a flower design 
+     -using turtle 
+18.Random password genrator 
+    -can ask the user the type of password ex.number,alphabets, special characters 
+    -using the random package 
+19.Calculator with GUI
+    -using TINKTER
