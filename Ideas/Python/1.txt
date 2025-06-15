@@ -1,4 +1,4 @@
-1.Number base converter (binary, decimal, hex)
+01.Number base converter (binary, decimal, hex)
 2.Dice roller simulator
 3.Coin flip simulator
 4.Password genrator
@@ -26,3 +26,6 @@
     -using the random package 
 19.Calculator with GUI
     -using TINKTER
+20.A Slot Machine game 
+   -Let's user put the initial money and a multiplier to check for balance after winning/ losing 
+   - A cash in and out option
