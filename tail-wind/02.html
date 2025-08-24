@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind Admin Panel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gray-100 flex flex-col">
+  <!-- Top Navbar -->
+  <header class="bg-blue-700 text-white p-4 flex justify-between items-center shadow-lg">
+    <h1 class="text-2xl font-bold">Admin Panel</h1>
+    <div class="flex items-center space-x-4">
+      <input type="text" placeholder="Search..." class="px-3 py-1 rounded text-black outline-none">
+      <button class="bg-blue-500 px-3 py-1 rounded hover:bg-blue-600">Logout</button>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <div class="flex flex-1">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white shadow-xl p-4 flex flex-col">
+      <h2 class="text-lg font-semibold mb-4">Navigation</h2>
+      <ul class="space-y-2 flex-1">
+        <li><a href="#" class="block p-2 rounded hover:bg-blue-100">Dashboard</a></li>
+        <li><a href="#" class="block p-2 rounded hover:bg-blue-100">Users</a></li>
+        <li><a href="#" class="block p-2 rounded hover:bg-blue-100">Reports</a></li>
+        <li><a href="#" class="block p-2 rounded hover:bg-blue-100">Analytics</a></li>
+        <li><a href="#" class="block p-2 rounded hover:bg-blue-100">Settings</a></li>
+      </ul>
+      <div class="mt-auto">
+        <button class="w-full bg-red-500 text-white py-2 rounded hover:bg-red-600">Delete Account</button>
+      </div>
+    </aside>
+
+    <!-- Content -->
+    <main class="flex-1 p-6 overflow-y-auto">
+      <h2 class="text-2xl font-bold mb-6 text-gray-700">Dashboard Overview</h2>
+
+      <!-- Stats -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div class="p-6 bg-white rounded-xl shadow text-center">
+          <h3 class="text-sm font-semibold text-gray-500">Users</h3>
+          <p class="text-3xl font-bold text-blue-600 mt-2">2,134</p>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow text-center">
+          <h3 class="text-sm font-semibold text-gray-500">Revenue</h3>
+          <p class="text-3xl font-bold text-green-600 mt-2">$12,450</p>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow text-center">
+          <h3 class="text-sm font-semibold text-gray-500">Orders</h3>
+          <p class="text-3xl font-bold text-purple-600 mt-2">845</p>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow text-center">
+          <h3 class="text-sm font-semibold text-gray-500">Tickets</h3>
+          <p class="text-3xl font-bold text-red-600 mt-2">56</p>
+        </div>
+      </div>
+
+      <!-- Two Columns Layout -->
+      <div class="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <!-- Recent Users -->
+        <div class="bg-white rounded-xl shadow p-4">
+          <h3 class="text-lg font-bold mb-4">Recent Users</h3>
+          <ul class="divide-y">
+            <li class="flex justify-between py-2">
+              <span>John Doe</span>
+              <span class="text-green-600 font-semibold">Active</span>
+            </li>
+            <li class="flex justify-between py-2">
+              <span>Jane Smith</span>
+              <span class="text-red-600 font-semibold">Inactive</span>
+            </li>
+            <li class="flex justify-between py-2">
+              <span>Michael Johnson</span>
+              <span class="text-green-600 font-semibold">Active</span>
+            </li>
+            <li class="flex justify-between py-2">
+              <span>Emily Davis</span>
+              <span class="text-yellow-600 font-semibold">Pending</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Activity Feed -->
+        <div class="bg-white rounded-xl shadow p-4">
+          <h3 class="text-lg font-bold mb-4">Activity Feed</h3>
+          <div class="space-y-3">
+            <div class="p-3 bg-gray-50 rounded-lg">
+              <p><strong>Admin</strong> added a new user</p>
+              <span class="text-xs text-gray-500">5 mins ago</span>
+            </div>
+            <div class="p-3 bg-gray-50 rounded-lg">
+              <p><strong>System</strong> generated monthly report</p>
+              <span class="text-xs text-gray-500">30 mins ago</span>
+            </div>
+            <div class="p-3 bg-gray-50 rounded-lg">
+              <p><strong>Jane</strong> updated profile settings</p>
+              <span class="text-xs text-gray-500">1 hour ago</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Table -->
+      <div class="mt-8 bg-white rounded-xl shadow overflow-hidden">
+        <h3 class="text-lg font-bold p-4">User List</h3>
+        <table class="w-full text-left">
+          <thead class="bg-gray-200">
+            <tr>
+              <th class="p-3">Name</th>
+              <th class="p-3">Email</th>
+              <th class="p-3">Role</th>
+              <th class="p-3">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t">
+              <td class="p-3">Alice Brown</td>
+              <td class="p-3">alice@example.com</td>
+              <td class="p-3">Admin</td>
+              <td class="p-3 text-green-600 font-semibold">Active</td>
+            </tr>
+            <tr class="border-t">
+              <td class="p-3">David Wilson</td>
+              <td class="p-3">david@example.com</td>
+              <td class="p-3">Editor</td>
+              <td class="p-3 text-yellow-600 font-semibold">Pending</td>
+            </tr>
+            <tr class="border-t">
+              <td class="p-3">Sophia Lee</td>
+              <td class="p-3">sophia@example.com</td>
+              <td class="p-3">Viewer</td>
+              <td class="p-3 text-red-600 font-semibold">Inactive</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trading Analytics Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+  <!-- Navbar -->
+  <header class="bg-gray-900 text-white p-4 flex justify-between items-center shadow-lg">
+    <h1 class="text-2xl font-bold text-green-400">Crypto Analytics</h1>
+    <nav class="flex items-center space-x-6">
+      <a href="#" class="hover:text-green-400">Markets</a>
+      <a href="#" class="hover:text-green-400">Analysis</a>
+      <a href="#" class="hover:text-green-400">Portfolio</a>
+      <a href="#" class="hover:text-green-400">News</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-1 p-6">
+    <!-- Overview Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div class="p-6 bg-white rounded-xl shadow text-center">
+        <h3 class="text-sm text-gray-500">BTC Price</h3>
+        <p class="text-2xl font-bold text-green-600 mt-2">$64,250</p>
+        <p class="text-sm text-green-500">+3.4% Today</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow text-center">
+        <h3 class="text-sm text-gray-500">24h Volume</h3>
+        <p class="text-2xl font-bold text-blue-600 mt-2">$38B</p>
+        <p class="text-sm text-gray-500">vs $32B Yesterday</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow text-center">
+        <h3 class="text-sm text-gray-500">Market Cap</h3>
+        <p class="text-2xl font-bold text-purple-600 mt-2">$1.2T</p>
+        <p class="text-sm text-gray-500">40% BTC Dominance</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow text-center">
+        <h3 class="text-sm text-gray-500">Sentiment</h3>
+        <p class="text-2xl font-bold text-yellow-500 mt-2">Greed</p>
+        <p class="text-sm text-gray-500">Fear & Greed Index: 72</p>
+      </div>
+    </div>
+
+    <!-- Chart & Indicators -->
+    <div class="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <!-- Chart Placeholder -->
+      <div class="lg:col-span-2 bg-white rounded-xl shadow p-4">
+        <h3 class="text-lg font-bold mb-2">BTC/USDT Price Chart</h3>
+        <div class="bg-gray-200 h-64 flex items-center justify-center rounded-lg text-gray-600">
+          Trading Chart Placeholder
+        </div>
+        <div class="grid grid-cols-4 text-center mt-4">
+          <div>
+            <p class="text-sm text-gray-500">RSI</p>
+            <p class="font-bold text-green-600">62 (Bullish)</p>
+          </div>
+          <div>
+            <p class="text-sm text-gray-500">MACD</p>
+            <p class="font-bold text-green-600">Cross Up</p>
+          </div>
+          <div>
+            <p class="text-sm text-gray-500">50MA</p>
+            <p class="font-bold text-green-600">Above</p>
+          </div>
+          <div>
+            <p class="text-sm text-gray-500">200MA</p>
+            <p class="font-bold text-green-600">Above</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Key Metrics -->
+      <div class="bg-white rounded-xl shadow p-4">
+        <h3 class="text-lg font-bold mb-2">Market Indicators</h3>
+        <ul class="space-y-3 text-sm">
+          <li class="flex justify-between">
+            <span>Volatility Index</span>
+            <span class="font-bold text-yellow-500">High</span>
+          </li>
+          <li class="flex justify-between">
+            <span>Funding Rate</span>
+            <span class="font-bold text-green-600">+0.03%</span>
+          </li>
+          <li class="flex justify-between">
+            <span>Open Interest</span>
+            <span class="font-bold text-blue-600">$1.6B</span>
+          </li>
+          <li class="flex justify-between">
+            <span>Liquidations (24h)</span>
+            <span class="font-bold text-red-600">$380M</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Sentiment + Predictions -->
+    <div class="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <!-- Sentiment Analysis -->
+      <div class="bg-white rounded-xl shadow p-4">
+        <h3 class="text-lg font-bold mb-4">Market Sentiment</h3>
+        <div class="space-y-3">
+          <div class="flex justify-between">
+            <span>Social Media Buzz</span>
+            <span class="text-green-600 font-semibold">Bullish</span>
+          </div>
+          <div class="flex justify-between">
+            <span>Google Trends</span>
+            <span class="text-yellow-500 font-semibold">Neutral</span>
+          </div>
+          <div class="flex justify-between">
+            <span>Whale Activity</span>
+            <span class="text-red-600 font-semibold">Selling</span>
+          </div>
+          <div class="flex justify-between">
+            <span>Institutional Flow</span>
+            <span class="text-green-600 font-semibold">Buying</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Prediction Models -->
+      <div class="bg-white rounded-xl shadow p-4">
+        <h3 class="text-lg font-bold mb-4">AI Price Prediction</h3>
+        <ul class="space-y-2 text-sm">
+          <li class="flex justify-between">
+            <span>1 Day Forecast</span>
+            <span class="font-bold text-green-600">$65,500 (+2%)</span>
+          </li>
+          <li class="flex justify-between">
+            <span>1 Week Forecast</span>
+            <span class="font-bold text-green-600">$69,000 (+7%)</span>
+          </li>
+          <li class="flex justify-between">
+            <span>1 Month Forecast</span>
+            <span class="font-bold text-yellow-500">$63,000 (-2%)</span>
+          </li>
+          <li class="flex justify-between">
+            <span>Risk Level</span>
+            <span class="font-bold text-red-600">High</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Correlation & Heatmap -->
+    <div class="mt-8 bg-white rounded-xl shadow p-4">
+      <h3 class="text-lg font-bold mb-4">Market Correlation Heatmap</h3>
+      <div class="grid grid-cols-5 gap-2 text-center text-xs">
+        <div class="bg-green-200 p-4 rounded">BTC</div>
+        <div class="bg-green-100 p-4 rounded">ETH</div>
+        <div class="bg-red-200 p-4 rounded">XRP</div>
+        <div class="bg-yellow-200 p-4 rounded">BNB</div>
+        <div class="bg-green-300 p-4 rounded">SOL</div>
+      </div>
+      <p class="text-gray-500 text-xs mt-2">* Colors indicate correlation strength with BTC</p>
+    </div>
+  </main>
+</body>
+</html>
