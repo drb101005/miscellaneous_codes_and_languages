@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind Dashboard Test</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gray-100 flex flex-col">
+  <!-- Navbar -->
+  <header class="bg-blue-600 text-white p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">My Dashboard</h1>
+    <nav class="space-x-4">
+      <a href="#" class="hover:underline">Home</a>
+      <a href="#" class="hover:underline">Profile</a>
+      <a href="#" class="hover:underline">Settings</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex flex-1">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white shadow-lg p-4">
+      <h2 class="font-semibold mb-3">Menu</h2>
+      <ul class="space-y-2">
+        <li><a href="#" class="block p-2 rounded hover:bg-blue-100">Dashboard</a></li>
+        <li><a href="#" class="block p-2 rounded hover:bg-blue-100">Messages</a></li>
+        <li><a href="#" class="block p-2 rounded hover:bg-blue-100">Analytics</a></li>
+        <li><a href="#" class="block p-2 rounded hover:bg-blue-100">Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- Content Area -->
+    <section class="flex-1 p-6">
+      <h2 class="text-2xl font-bold text-gray-700 mb-4">Welcome Back!</h2>
+
+      <!-- Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 bg-white rounded-xl shadow text-center">
+          <h3 class="text-lg font-semibold text-blue-600">Users</h3>
+          <p class="text-3xl font-bold mt-2">1,230</p>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow text-center">
+          <h3 class="text-lg font-semibold text-green-600">Sales</h3>
+          <p class="text-3xl font-bold mt-2">$9,876</p>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow text-center">
+          <h3 class="text-lg font-semibold text-purple-600">Messages</h3>
+          <p class="text-3xl font-bold mt-2">245</p>
+        </div>
+      </div>
+
+      <!-- Table -->
+      <div class="mt-8 bg-white rounded-xl shadow overflow-hidden">
+        <table class="w-full text-left">
+          <thead class="bg-gray-200">
+            <tr>
+              <th class="p-3">Name</th>
+              <th class="p-3">Email</th>
+              <th class="p-3">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t">
+              <td class="p-3">John Doe</td>
+              <td class="p-3">john@example.com</td>
+              <td class="p-3 text-green-600 font-semibold">Active</td>
+            </tr>
+            <tr class="border-t">
+              <td class="p-3">Jane Smith</td>
+              <td class="p-3">jane@example.com</td>
+              <td class="p-3 text-red-600 font-semibold">Inactive</td>
+            </tr>
+            <tr class="border-t">
+              <td class="p-3">Mike Johnson</td>
+              <td class="p-3">mike@example.com</td>
+              <td class="p-3 text-green-600 font-semibold">Active</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
