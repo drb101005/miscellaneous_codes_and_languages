@@ -16,7 +16,7 @@ config_path = hf_hub_download(
 voice = PiperVoice.load(model_path, config_path)
 
 chunks = []
-for chunk in voice.synthesize("Hello Sir , what will we be building today??."):
+for chunk in voice.synthesize("Helllooooo"):
     chunks.append(chunk.audio_float_array)   # ✅ correct field
 
 audio = np.concatenate(chunks)
